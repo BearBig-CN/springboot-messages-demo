@@ -1,0 +1,15 @@
+## 队列url, activeMQ集群部署，启用故障转移
+spring:
+  activemq:
+    broker-url: failover:(tcp://127.0.0.1:61616,tcp://127.0.0.1:61617)
+
+
+## 定义2个destination,一个用于P2P模式，一个用于发布/订阅模式
+queue:
+  p2p:
+    destination:
+      name: p2p_destination
+      stuName: p2p_destination_stu
+  ps:
+    destination:
+      name: ps_destination
