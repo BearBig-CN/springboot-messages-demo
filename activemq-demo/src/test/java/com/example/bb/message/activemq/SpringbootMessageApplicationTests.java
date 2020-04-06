@@ -8,6 +8,7 @@ class SpringbootMessageApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
